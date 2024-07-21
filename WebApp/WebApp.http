@@ -1,6 +1,8 @@
-@WebApp_HostAddress = http://localhost:5173
+### Post a name to the API and get the response
 
-GET {{WebApp_HostAddress}}/weatherforecast/
-Accept: application/json
+POST https://localhost:5001/api/name
+Content-Type: application/json
 
-###
+{
+  "name": "Your Name"
+}
